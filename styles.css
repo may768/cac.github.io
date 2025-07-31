@@ -363,11 +363,21 @@ p {
   backdrop-filter: blur(2px);
 }
 
-/* Responsive Tweaks */
 @media (max-width: 768px) {
+  .who-we-are {
+    padding: 60px 20px;
+  }
+
   .who-we-are-container {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
+  }
+
+  .who-we-are-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .who-we-are-text h2 {
@@ -376,5 +386,15 @@ p {
 
   .who-we-are-text p {
     font-size: 1rem;
+  }
+
+  .activities {
+    justify-content: center;
+  }
+
+  .polygonal-bg svg {
+    width: 150%;
+    height: 150%;
+    transform: translate(-15%, -15%);
   }
 }
